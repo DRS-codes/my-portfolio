@@ -5,261 +5,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRS-CODES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        :root{
+            --global-bg-color: white;
+            --global-fg-color: black;
+            --translucent-color: rgba(255, 255, 255, 0.473);
+            --dark-color: rgba(51, 51, 51, 0.966);
+            --light-color: rgb(151, 151, 151);
+            --yes-color: rgb(0, 209, 0);
+            --yello-color: rgb(252, 211, 30);
+            --beautiful-color-1: aqua;
+            --beautiful-color-1-light: rgb(187, 255, 255);
+            --beautiful-color-2: rgb(212, 0, 255);
+            --beautiful-color-2-light: rgb(240, 163, 255);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--global-bg-color);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
         nav {
-            align-items: end;
-            justify-content: space-between;
+            background-color: var(--translucent-color);
+            height: 60px;
             display: flex;
-            padding: 1cm;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            box-shadow: 0px 8px 10px -15px var(--beautiful-color-2);    
         }
 
         a {
             text-decoration: none;
-            margin-left: 1cm;
-            color: white;
-            font-weight: bold;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: var(--beautiful-color-2-light);
+            font-weight: 700;
+            font-size: 14px;
+            font-family: "Raleway", sans-serif;
         }
 
-        .container {
-            height: 15cm;
-            margin-top: 0.5cm;
-            margin-left: 0.5cm;
-            margin-right: 0.5cm;
-            background-color: rgb(0, 0, 0);
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .whatsapp-button, .resume {
+            height: 38px;
+            width: 100%;
+            font-size: 16px;
             border-radius: 40px;
-            box-shadow: 5px 5px 10px rgb(61, 61, 61);
-        }
-
-        .sec {
-            font-size: 1cm;
-            margin-left: 1cm;
-            margin-top: 1cm;
-        }
-
-        .name {
-            font-size: 1.8cm;
-            margin-top: 0.5cm;
-            color: orange;
+            padding: 0 12px;
+            background-color: var(--beautiful-color-2);
+            color: var(--global-bg-color);
+            border: none;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
         .myname {
-            font-size: 0.8cm;
+            font-family: "Lilita One", cursive;
+            font-size: 40px;
+            color: var(--beautiful-color-2);
+            font-weight: 700;
         }
 
-        .resume {
-            height: 1cm;
-            width: 3cm;
-            border-color: white;
-            background-color: orange;
-            border-radius: 10px;
-            margin-top: 1cm;
-            color: white;
-            font-size: large;
-        }
-
-        .about,
-        .certificates,
-        .projects {
-            margin-left: 1cm;
-            margin-right: 1cm;
-            margin-top: 1cm;
-            width: 95%;
-        }
-
-        p {
+        .myself {
             display: flex;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: large;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-        }
-
-        img {
-            margin-top: 0.5cm;
-            margin-left: 0.5cm;
-        }
-
-        .img1 {
-            margin-top: 0.5cm;
-            margin-left: 0.5cm;
-            border-radius: 100px;
-        }
-
-        body {
-            color: white;
-            background-color: black;
-        }
-
-        section {
-            align-items: start;
-            justify-content: space-around;
-            display: block;
-
-        }
-
-        footer {
-            padding: 0.5cm;
-            border-color: white;
-            height: 5cm;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: 20px;
+            margin: 12px;
+            padding: 20px;
+            background-color: var(--global-bg-color);
+            box-shadow: var(--beautiful-color-2-light) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            border-radius: 30px;
+            color: var(--beautiful-color-1);
         }
 
         .myimg {
-            margin-top: -50%;
-
+            height: 220px;
+            width: auto;
         }
 
         .myimage {
-            margin-left: 65%;
-            margin-top: -22%;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--yello-color);
             border-radius: 50%;
-            width: 10cm;
-            height: 10cm;
-            background-color: orange;
         }
+
+        .sec {
+            font-size: 43px;
+            font-weight: 800;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .hello {
+            color: var(--beautiful-color-1);
+        }
+
+        .i-am {
+            color: var(--beautiful-color-2-light);
+            font-family: "Dancing Script";
+        }
+
+        .name {
+            font-family: "Lilita One", cursive;
+            color: var(--beautiful-color-2);
+            font-weight: 500;
+        }
+
+        .profession {
+            font-size: 34px;
+            margin-top: 15px;
+            display: flex;
+            height:50px;
+        }
+
+        .animating-text {
+            overflow: hidden;
+        }
+
+        .animating-text > div > div {
+            height:2.81rem;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+        }
+
+        .animating-text div:first-child {
+            animation: text-animation 8s infinite;
+        }
+
+        .flutter-dev div {
+            /* background-color: var(--beautiful-color-2-light); */
+            color: var(--beautiful-color-1);
+            font-family: "Lilita One", cursive;
+            font-weight: normal;
+        }
+
+        .laravel-dev div {
+            /* background-color: var(--beautiful-color-2-light); */
+            color: var(--beautiful-color-2-light);
+            font-family: "Lilita One", cursive;
+            font-weight: normal;
+        }
+
+        .backend-dev div {
+            /* background-color: var(--beautiful-color-2-light); */
+            color: var(--beautiful-color-1);
+            font-family: "Lilita One", cursive;
+            font-weight: normal;
+        }
+
+        @keyframes text-animation {
+            0% {margin-top: 0;}
+            10% {margin-top: 0;}
+            20% {margin-top: -5.62rem;}
+            30% {margin-top: -5.62rem;}
+            40% {margin-top: -11.24rem;}
+            60% {margin-top: -11.24rem;}
+            70% {margin-top: -5.62rem;}
+            80% {margin-top: -5.62rem;}
+            90% {margin-top: 0;}
+            100% {margin-top: 0;}
+        }
+
+
+
+        .resume {
+            width: 100px;
+            font-size: 18px;
+        }        
+
+
     </style>
 </head>
 
 <body>
 
-    <div class="container" id="container">
-        <nav>
-            <div class="nav-name">
-                <a href="#container" class="myname">
-                    DRS-CODES
-                </a>
-            </div>
+    <nav>
+        <div class="nav-name">
+            <a href="#" class="myname">
+                DRS-CODES
+            </a>
+        </div>
 
-            <div class="nav-menu">
-                <a href="#about">
-                    ABOUT
-                </a>
-                <a href="#certificates">
-                    CERTIFICATES
-                </a>
-                <a href="#projects">
-                    PROJECTS
-                </a>
-                <a href="#profiles">
-                    PROFILES
-                </a>
+        <div class="nav-menu">
+            <a href="#about">
+                ABOUT
+            </a>
+            <a href="#certificates">
+                CERTIFICATES
+            </a>
+            <a href="#projects">
+                PROJECTS
+            </a>
+            <a href="#profiles">
+                PROFILES
+            </a>
 
-            </div>
-
-
-
+            <a href="https://wa.me/1111111111" target="_blank" class="p-2">
+                <button class="whatsapp-button">Contact me</button>
+            </a>
 
 
-        </nav>
+        </div>
+    </nav>
 
-
-
+    <div class="myself">
         <div class="sec">
-            Hello, I am
-            <article class="name">
-                Text('Dhanashree Sawant')
-            </article>
-            <article class="profession">
-                Flutter App Developer
-            </article>
+            <span class="hello">Hello</span>, <span class="i-am">I am</span>
+            <div class="name">
+                Dhanashree Sawant
+            </div>
+            <div class="profession">
+                <div class="animating-text">
+                    <div class="flutter-dev"><div>Flutter App Developer</div></div>
+                    <div class="laravel-dev"><div>Laravel Developer</div></div>
+                    <div class="backend-dev"><div>Backend Developer</div></div>
+                </div>
+            </div>
             <button type="button" class="resume">Resume</button>
         </div>
 
-        <div class="myimage"><img src="images/myimg.png" alt="" srcset="" height="500" class="myimg"></div>
-
-
-    </div>
-
-    <div class="about" id="about">
-        <h1>ABOUT</h1>
-
-
-        <p>I’m currently pursuing a Bachelor of Computer Applications and am in my second year. My primary interest
-            is in mobile and web app development, and I’ve gained hands-on experience with technologies like Dart,
-            Flutter, and MERN stack. Recently, I worked on a couple of projects, including an eCommerce app built in
-            Flutter where I integrated an API to display products, a cart system, and persistent local storage. This
-            project helped me understand state management, especially using Provider, and solidified my skills in
-            handling APIs and responsive UI design.
-        </p>
-        <p>
-            I also have experience in backend development with Node.js and Express, which I used in another project
-            to create a task management app. This gave me a good understanding of handling CRUD operations,
-            authentication, and data streaming, which I believe would be valuable in this internship.
-        </p>
-        <p>
-            I'm really motivated to join your team because I admire your focus on innovative app solutions, and I’m
-            excited about the opportunity to apply and expand my skills in a practical environment, working on
-            real-world projects. In the long term, I aim to become a well-rounded developer who can handle both
-            frontend and backend aspects of development.</p>
-
+        <div class="myimage"><img src="images/myimg.png" alt="" srcset="" class="myimg"></div>
 
     </div>
 
-    <div class="certificates" id="certificates">
-        <center>
-            <h1>CERTIFICATES</h1>
-
-            <section>
-
-                <img src="images/mycertificate1.jpeg" alt="" srcset="" height="500">
-                <img src="images/mycertificate2.jpeg" alt="" srcset="" height="500">
-                <img src="images/mycertificate3.jpeg" alt="" srcset="" height="500">
-                <img src="images/mycertificate4.jpeg" alt="" srcset="" height="500">
-                <img src="images/mycertificate5.jpeg" alt="" srcset="" height="500">
-
-            </section>
-
-        </center>
-    </div>
-
-    <div class="projects" id="projects">
-        <center>
-            <h1>PROJECTS</h1>
-            <h2>FLUTTER APPS</h2>
-
-
-            <section>
-                <h3>Cafe</h3>
-                <img src="images/project5.jpeg" alt="" srcset="" height="500">
-                <img src="images/project7.jpeg" alt="" srcset="" height="500">
-                <img src="images/project4.jpeg" alt="" srcset="" height="500">
-                <img src="images/project6.jpeg" alt="" srcset="" height="500">
-            </section>
-            <h3>SECURITY GUARD APP</h3>
-            <img src="images/project10.jpeg" alt="" srcset="" height="500">
-            <img src="images/project11.jpeg" alt="" srcset="" height="500">
-            <img src="images/project8.jpeg" alt="" srcset="" height="500">
-            <img src="images/project9.jpeg" alt="" srcset="" height="500">
-
-            </section>
-            <section>
-                <h3>D_LICIOUS</h3>
-                <img src="images/project2.jpeg" alt="" srcset="" height="500">
-                <img src="images/project1.jpeg" alt="" srcset="" height="500">
-                <img src="images/project3.jpeg" alt="" srcset="" height="500">
-            </section>
-
-    </div>
-    </center>
-    <footer id="profiles">
-        <center>
-            <h1>MY PROFILES</h1>
-
-            <a href="https://www.instagram.com/drs___codes/profilecard/?igsh=d3JkcWRnNGFjbnV1"><img
-                    src="images/instagram.png" alt="" srcset="" height="100" width="100" class="img1"></a>
-            <a href="https://github.com/DRS-codes"><img src="images/github.png" alt="" srcset="" height="100"
-                    width="100" class="img1"></a>
-            <a
-                href="https://www.linkedin.com/in/dhanashree-sawant-7349a12aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
-                    src="images/linkedin.jpg" alt="" srcset="" height="100" width="100" class="img1"></a>
-        </center>
-    </footer>
-
+    
 </body>
-
 </html>
